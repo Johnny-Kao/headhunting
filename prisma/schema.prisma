@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String
+  email         String    @unique
+  password      String
+  userType      String    // 'headhunter' 或 'candidate'
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // 基本信息
+  avatar        String?   // 头像 URL
+  phone         String?   // 手机号码
+  location      String?   // 所在地
+  bio           String?   // 个人简介
+
+  // 猎头特有信息
+  company       String?   // 公司名称
+  position      String?   // 职位
+  experience    Int?      // 从业年限
+  specialties   String?   // 专长领域
+  achievements  String?   // 成就
+
+  // 求职者特有信息
+  education     String?   // 教育背景
+  skills        String?   // 技能
+  workHistory   String?   // 工作经历
+  expectedSalary Int?     // 期望薪资
+  jobPreferences String?  // 求职偏好
+
+  // 社交信息
+  wechat        String?   // 微信号
+  linkedin      String?   // LinkedIn 链接
+  website       String?   // 个人网站
+}
