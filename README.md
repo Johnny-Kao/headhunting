@@ -57,6 +57,7 @@ MIT
 # Headhunter 網站部署指南
 
 ## 系統要求
+- Node.js 18 或更高版本
 - Docker
 - Docker Compose
 - Git
@@ -65,23 +66,33 @@ MIT
 
 1. 克隆代碼庫：
 ```bash
-git clone [您的代碼庫地址]
-cd Headhunter
+git clone https://github.com/Johnny-Kao/headhunting.git
+cd headhunting
 ```
 
-2. 設置環境變量：
+2. 安裝依賴：
+```bash
+npm install
+```
+
+3. 設置環境變量：
 ```bash
 cp .env.example .env
 ```
-然後編輯 .env 文件，填入實際的環境變量值。
+然後編輯 .env 文件，填入實際的環境變量值：
+- JWT_SECRET：用於 JWT 加密的密鑰
+- GOOGLE_ANALYTICS_ID：Google Analytics 追蹤 ID
+- MICROSOFT_CLARITY_ID：Microsoft Clarity 追蹤 ID
 
-3. 設置部署腳本權限：
+4. 本地開發：
+```bash
+npm run dev
+```
+訪問 http://localhost:3000 查看網站
+
+5. 生產環境部署：
 ```bash
 chmod +x deploy.sh
-```
-
-4. 執行部署：
-```bash
 ./deploy.sh
 ```
 
@@ -106,4 +117,15 @@ docker-compose down
 - 確保服務器防火牆開放 3000 端口
 - 建議使用 Nginx 作為反向代理
 - 定期備份數據
-- 監控服務器資源使用情況 
+- 監控服務器資源使用情況
+
+## 常見問題排解
+
+如果遇到依賴相關的錯誤：
+1. 刪除 node_modules 目錄
+2. 刪除 package-lock.json 文件
+3. 重新運行 npm install
+
+如果遇到構建錯誤：
+1. 清除 .next 目錄
+2. 重新運行 npm run build 
