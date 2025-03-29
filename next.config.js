@@ -1,17 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'standalone',
   images: {
-    unoptimized: true,
-    domains: ['cdn.shopify.com', 'images.unsplash.com'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'cdn.shopify.com',
-        pathname: '/**',
-      },
-    ],
-  },
-};
+    domains: ['images.unsplash.com'],
+  }
+}
 
-module.exports = nextConfig; 
+module.exports = nextConfig 

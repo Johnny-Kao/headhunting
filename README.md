@@ -53,3 +53,57 @@ src/
 ## 许可证
 
 MIT 
+
+# Headhunter 網站部署指南
+
+## 系統要求
+- Docker
+- Docker Compose
+- Git
+
+## 部署步驟
+
+1. 克隆代碼庫：
+```bash
+git clone [您的代碼庫地址]
+cd Headhunter
+```
+
+2. 設置環境變量：
+```bash
+cp .env.example .env
+```
+然後編輯 .env 文件，填入實際的環境變量值。
+
+3. 設置部署腳本權限：
+```bash
+chmod +x deploy.sh
+```
+
+4. 執行部署：
+```bash
+./deploy.sh
+```
+
+## 維護命令
+
+- 查看日誌：
+```bash
+docker-compose logs -f
+```
+
+- 重啟服務：
+```bash
+docker-compose restart
+```
+
+- 停止服務：
+```bash
+docker-compose down
+```
+
+## 注意事項
+- 確保服務器防火牆開放 3000 端口
+- 建議使用 Nginx 作為反向代理
+- 定期備份數據
+- 監控服務器資源使用情況 

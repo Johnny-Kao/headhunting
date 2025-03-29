@@ -1,14 +1,1 @@
-{
-  "/not-found": "app/not-found.js",
-  "/career-23/page": "app/career-23/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/page": "app/page.js",
-  "/find-headhunter/page": "app/find-headhunter/page.js",
-  "/login/page": "app/login/page.js",
-  "/terms/page": "app/terms/page.js",
-  "/privacy/page": "app/privacy/page.js",
-  "/team/page": "app/team/page.js",
-  "/about/page": "app/about/page.js",
-  "/rankings/page": "app/rankings/page.js",
-  "/signup/page": "app/signup/page.js"
-}
+{}
