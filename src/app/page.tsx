@@ -32,10 +32,10 @@ export default function HomePage() {
             </p>
             <div className="mt-10">
               <Link
-                href="/signup"
+                href="/contact"
                 className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
               >
-                👉 立即開啟你的獵頭事業
+                👉 開發中
                 <svg
                   className="ml-2 -mr-1 w-5 h-5"
                   fill="none"
@@ -240,10 +240,10 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <Link
-                  href="/signup"
+                  href="/contact"
                   className="mt-8 block w-full bg-blue-600 text-white text-center py-3 px-6 rounded-md hover:bg-blue-700 transition-colors"
                 >
-                  立即開始
+                  開發中
                 </Link>
               </div>
             </div>
@@ -349,10 +349,10 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <Link
-                  href="/signup"
+                  href="/contact"
                   className="mt-8 block w-full bg-blue-600 text-white text-center py-3 px-6 rounded-md hover:bg-blue-700 transition-colors"
                 >
-                  升級進階版
+                  開發中
                 </Link>
               </div>
             </div>
@@ -455,10 +455,10 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <Link
-                  href="/signup"
+                  href="/contact"
                   className="mt-8 block w-full bg-blue-600 text-white text-center py-3 px-6 rounded-md hover:bg-blue-700 transition-colors"
                 >
-                  升級高級版
+                  開發中
                 </Link>
               </div>
             </div>

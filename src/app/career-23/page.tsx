@@ -13,17 +13,17 @@ export default function Career23Page() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                🚀 轉職不是靠運氣，是靠準備
+                🚀 転職は運ではなく、準備です
               </h1>
               <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-                從重新定位職涯目標，到成功接到 offer ——我們幫你盤點轉職路上的 23 件關鍵事情
+                転職の道のりをリニューアルし、成功して offer をもらすまでの 23 の重要なこと
               </p>
               <div className="mt-10">
                 <Link
                   href="#form"
                   className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
                 >
-                  👉 我要開始準備
+                  👉 準備を始める
                 </Link>
               </div>
             </div>
@@ -35,21 +35,20 @@ export default function Career23Page() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                為什麼需要「轉職的 23 件事情」
+                なぜ「転職の 23 のこと」が必要なのか
               </h2>
               <div className="max-w-3xl mx-auto">
                 <p className="text-lg text-gray-600 mb-6">
-                  你準備換工作了，卻卡在：
+                  転職を準備しているが、以下のように悩んでいる場合があります：
                 </p>
                 <ul className="text-lg text-gray-600 space-y-4 mb-8">
-                  <li>• 不知道從哪裡開始準備？</li>
-                  <li>• 簡歷寫了十版還是不確定對不對？</li>
-                  <li>• 面試時總覺得回答不到點？</li>
-                  <li>• 想轉職卻還沒搞清楚「自己要什麼」？</li>
+                  <li>• どこから準備を始めればいいかわからない</li>
+                  <li>• 履歴書を 10 版以上書いても確信が持てない</li>
+                  <li>• 面接時に常に正しい回答ができない</li>
+                  <li>• 転職したいが「自分は何がしたいのか」がわからない</li>
                 </ul>
                 <p className="text-lg text-gray-600">
-                  我們設計了「轉職的 23 件事情」，幫你釐清從 開始準備 到 順利接到 offer 整個過程。
-                  你只需要照著這份路線圖，逐步完成每一項準備，就能用系統性的方式踏實前進。
+                  「転職の 23 のこと」を設計しました。このルートマップに従って、ステップバイステップで準備を進めることで、システマチックに進むことができます。
                 </p>
               </div>
             </div>
@@ -61,47 +60,47 @@ export default function Career23Page() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-12">
-                轉職的三個階段 × 23 件關鍵事情
+                転職の 3 つのステージ × 23 の重要なこと
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Stage 1 */}
               <div className="bg-white p-8 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  🧩 第一階段：售前準備（Before Headhunter）
+                  🧩 第一ステージ：セールスプレイヤーの準備（Before Headhunter）
                 </h3>
                 <ul className="space-y-4 text-gray-600">
-                  <li>• 釐清為何轉職＆想去哪裡</li>
-                  <li>• 盤點技能與經驗</li>
-                  <li>• 修改／客製化履歷</li>
-                  <li>• 打造 LinkedIn 或個人品牌頁面</li>
-                  <li>• 市場與技能調查</li>
+                  <li>• 転職の理由と希望する場所を明確にする</li>
+                  <li>• スキルと経験を盤点する</li>
+                  <li>• 履歴書を修正／カスタマイズする</li>
+                  <li>• LinkedIn または個人ブランドページを作成する</li>
+                  <li>• 市場とスキルの調査</li>
                 </ul>
               </div>
 
               {/* Stage 2 */}
               <div className="bg-white p-8 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  🧠 第二階段：技能升級與面試準備
+                  🧠 第二ステージ：スキルアップと面接準備
                 </h3>
                 <ul className="space-y-4 text-gray-600">
-                  <li>• 面試＆口試實戰練習</li>
-                  <li>• 模擬常見情境題／履歷題</li>
-                  <li>• 自我介紹與薪資談判策略</li>
-                  <li>• 模擬面試、心理建設</li>
+                  <li>• 面接と口試の実戦練習</li>
+                  <li>• 一般的なシナリオ問題／履歴書問題のモック</li>
+                  <li>• 自己紹介と給与交渉の戦略</li>
+                  <li>• モック面接、心理的建設</li>
                 </ul>
               </div>
 
               {/* Stage 3 */}
               <div className="bg-white p-8 rounded-lg shadow-sm">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  🚀 第三階段：開始與市場接軌
+                  🚀 第三ステージ：スタートと市場との接続
                 </h3>
                 <ul className="space-y-4 text-gray-600">
-                  <li>• 主動找職缺、認識獵頭</li>
-                  <li>• 投遞追蹤與面試管理</li>
-                  <li>• 解讀工作 JD 與契約條款</li>
-                  <li>• 試用期計畫、新環境適應策略</li>
+                  <li>• ジョブアドを自発的に探し、ヘッドハンターを知る</li>
+                  <li>• ジョブアドを追跡し、面接管理</li>
+                  <li>• ジョブアドを解読し、契約条件を理解する</li>
+                  <li>• 試用期間計画、新環境への適応戦略</li>
                 </ul>
               </div>
             </div>
@@ -306,6 +305,19 @@ export default function Career23Page() {
                 </div>
 
                 <div>
+                  <label htmlFor="note" className="block text-sm font-medium text-gray-700">
+                    備註
+                  </label>
+                  <textarea
+                    id="note"
+                    name="note"
+                    rows={3}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                    placeholder="如果有其他想說的話，請寫在這裡..."
+                  />
+                </div>
+
+                <div>
                   <button
                     type="submit"
                     className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -322,24 +334,12 @@ export default function Career23Page() {
           dangerouslySetInnerHTML={{
             __html: `
               const form = document.getElementById('careerForm');
-              const jobSelect = document.getElementById('currentJob');
-              const otherJobWrapper = document.getElementById('otherJobWrapper');
-              const otherJobInput = document.getElementById('otherJob');
               const targetJobSelect = document.getElementById('targetJob');
               const otherTargetJobWrapper = document.getElementById('otherTargetJobWrapper');
               const otherTargetJobInput = document.getElementById('otherTargetJob');
 
-              jobSelect.addEventListener('change', function() {
-                if (jobSelect.value === '其他') {
-                  otherJobWrapper.classList.remove('hidden');
-                } else {
-                  otherJobWrapper.classList.add('hidden');
-                  otherJobInput.value = '';
-                }
-              });
-
               targetJobSelect.addEventListener('change', function() {
-                if (targetJobSelect.value === '其他') {
+                if (targetJobSelect.value === 'その他') {
                   otherTargetJobWrapper.classList.remove('hidden');
                 } else {
                   otherTargetJobWrapper.classList.add('hidden');
@@ -355,27 +355,28 @@ export default function Career23Page() {
                   services.push(formData.get('otherService'));
                 }
 
-                const currentJob = jobSelect.value === '其他' ? otherJobInput.value : jobSelect.value;
-                const targetJob = targetJobSelect.value === '其他' ? otherTargetJobInput.value : targetJobSelect.value;
+                const targetJob = targetJobSelect.value === 'その他' 
+                  ? otherTargetJobInput.value 
+                  : targetJobSelect.value;
 
                 const data = {
                   name: formData.get('name'),
                   email: formData.get('email'),
-                  currentJob: currentJob,
+                  currentJob: formData.get('currentJob'),
                   targetJob: targetJob,
-                  services: services.join(', ')
+                  services: services.join(', '),
+                  note: formData.get('note') || ''
                 };
 
-                fetch('https://script.google.com/macros/s/AKfycbztuwkwOsTuiVNhOPqBoFmfw3Wse-FshgmV0DYNfyPvteSpJ4Seb4Q5e__ZsOaMQRx6/exec', {
+                fetch('https://script.google.com/macros/s/AKfycbxYEY84gsjFUTHbqnNA-WmGL43orV9NdZz4uSxP7Pz2t0m-nJtoTc5AOvOh4DVKkARF/exec', {
                   method: 'POST',
                   mode: 'no-cors',
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify(data)
                 });
 
-                alert('✅ 表單已送出，我們會盡快與您聯繫！');
+                alert('✅ フォームを送信しました。後ほどご連絡させていただきます！');
                 form.reset();
-                otherJobWrapper.classList.add('hidden');
                 otherTargetJobWrapper.classList.add('hidden');
               });
             `,

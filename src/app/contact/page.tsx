@@ -53,7 +53,7 @@ export default function ContactPage() {
     setError('');
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxn3bRzgvFRPPLFN6xecYUfOdMhXwYgUqH69tKOGKxnZbwaBNf4IF5HX6y0JQRStA2s/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxGciXZsCej6CTTHNhEkB_grpOkAKqMD416uX1Kvv-Dz9_g74Dgu7RnVYPmEzUEziPW/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
@@ -202,6 +202,36 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', function(e) {
+              e.preventDefault();
+              const formData = new FormData(form);
+
+              const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
+              };
+
+              fetch('https://script.google.com/macros/s/AKfycbxGciXZsCej6CTTHNhEkB_grpOkAKqMD416uX1Kvv-Dz9_g74Dgu7RnVYPmEzUEziPW/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+              });
+
+              alert('✅ フォームを送信しました。後ほどご連絡させていただきます！');
+              form.reset();
+            });
+          `,
+        }}
+      />
     </Layout>
   );
 }

@@ -76,7 +76,7 @@ export default function BecomeHeadhunter() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxn3bRzgvFRPPLFN6xecYUfOdMhXwYgUqH69tKOGKxnZbwaBNf4IF5HX6y0JQRStA2s/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzDjATKygSoNp9CzLdFsodDSzgl3EL4gWHykKwY25CAjk8HRA7H835dhzSutSbRwQyB/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
@@ -109,7 +109,7 @@ export default function BecomeHeadhunter() {
 
   const handleModalAction = async (action: 'close' | 'contact') => {
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbxn3bRzgvFRPPLFN6xecYUfOdMhXwYgUqH69tKOGKxnZbwaBNf4IF5HX6y0JQRStA2s/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbzDjATKygSoNp9CzLdFsodDSzgl3EL4gWHykKwY25CAjk8HRA7H835dhzSutSbRwQyB/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
@@ -401,6 +401,39 @@ export default function BecomeHeadhunter() {
             </div>
           </div>
         )}
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              const form = document.getElementById('consultingForm');
+
+              form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+
+                const data = {
+                  name: formData.get('name'),
+                  email: formData.get('email'),
+                  phone: formData.get('phone'),
+                  company: formData.get('company'),
+                  experience: formData.get('experience'),
+                  industry: formData.get('industry'),
+                  inquiry: formData.get('inquiry')
+                };
+
+                fetch('https://script.google.com/macros/s/AKfycbzDjATKygSoNp9CzLdFsodDSzgl3EL4gWHykKwY25CAjk8HRA7H835dhzSutSbRwQyB/exec', {
+                  method: 'POST',
+                  mode: 'no-cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(data)
+                });
+
+                alert('✅ フォームを送信しました。後ほどご連絡させていただきます！');
+                form.reset();
+              });
+            `,
+          }}
+        />
       </div>
     </Layout>
   );
